@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-couh
+  namespace: build-e2e-xoxv-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:62f61b26886634d71b024029739b1333930fcfe414db2724943b45eeeb967c72
+        name: my-python
+        resources: {}
+status: {}
